@@ -1,11 +1,65 @@
-<!DOCTYPE html>
-<html lang="en">
+<!-- index.html -->
+<!doctype html>
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Organização Solidária — Início</title>
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
+<header>
+<div class="container">
+<a href="index.html" class="brand">
+<img src="Imagem/Logo da Organizaçã.jpg" alt="Logo da Organização" width="100">
+</a>
+<nav aria-label="Navegação principal">
+<ul>
+<li><a href="index.html">Início</a></li>
+<li><a href="projetos.html">Projetos</a></li>
+<li><a href="cadastro.html">Cadastro</a></li>
+</ul>
+</nav>
+</div>
+</header>
+
+
+<main>
+<section class="hero" aria-labelledby="hero-title">
+<div class="container">
+<h1 id="hero-title">Organização Solidária</h1>
+<p>Trabalhando por uma comunidade mais justa — voluntariado, doações e projetos sociais.</p>
+<img src="Imagem/Voluntariado.jpg" alt="Voluntários ajudando a comunidade">
+</div>
+</section>
+
+
+<section class="about container" aria-labelledby="about-title">
+<h2 id="about-title">Sobre a organização</h2>
+<p>Somos uma organização sem fins lucrativos que promove ações sociais, capacitação e apoio às famílias em situação de vulnerabilidade.</p>
+<address>
+<p>Contato: <a href="mailto:contato@organizacaosolidaria.org">contato@organizacaosolidaria.org</a></p>
+<p>Telefone: <a href="tel:+5511999999999">(11) 99999-9999</a></p>
+</address>
+</section>
+
+
+<section class="cta container" aria-labelledby="cta-title">
+<h2 id="cta-title">Participe</h2>
+<p>Acesse nossos projetos ou faça seu cadastro como voluntário.</p>
+<a class="btn" href="projetos.html">Ver projetos</a>
+<a class="btn outline" href="cadastro.html">Cadastre-se</a>
+</section>
+</main>
+
+
+<footer>
+<div class="container">
+<p>&copy; <span id="year"></span> Organização Solidária — Todos os direitos reservados.</p>
+</div>
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</footer>
 </body>
 </html>
